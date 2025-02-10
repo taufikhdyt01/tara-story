@@ -11,11 +11,11 @@ function Question() {
   const inputRef = useRef(null);
 
   // Customize your own Trending Searches
-  const trends = ['Why is my bf so cute?', 'Why does Rheina love him more?', `Rheina's birthdate (coz her bf forgets)`,]
+  const trends = ['Kenapa Taufik selalu ada saat aku butuh ya?', 'Kenapa Taufik perhatian banget?', `Moment paling berkesan sama Taufik`,]
 
   const handleSearch = (e) => {
     e.preventDefault()
-    if (searchQuery.toLowerCase() === 'how long have we been together?' || searchQuery.toLowerCase() === 'how long have we been together') {
+    if (searchQuery.toLowerCase() === 'udah berapa lama kita pacaran?' || searchQuery.toLowerCase() === 'kita udah pacaran berapa lama?') {
           navigate("/timer");
 
     } else{
@@ -42,7 +42,7 @@ function Question() {
             ref={inputRef}
             type="text"
             className="flex-1 bg-transparent outline-none"
-            placeholder="Search Google or type a URL"
+            placeholder="Cari di Google"
           />
           <Mic className="w-5 h-5 text-[#8ab4f8]" />
           <Camera className="w-5 h-5 text-[#8ab4f8]" />
@@ -50,7 +50,7 @@ function Question() {
           
           <div className="mt-8 w-full max-w-[600px]">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl">Trending searches</h2>
+              <h2 className="text-2xl">Pencarian Terpopuler</h2>
               <button className="p-2">
                 <Search className="w-6 h-6" />
               </button>
@@ -84,8 +84,8 @@ function Question() {
               <Camera className="w-5 h-5 text-[#8ab4f8]" />
             </div>
           </form>
-          <div className='mt-10  px-5 text-white/50'>
-            <p>Pro tip: try searching "How long have we been together?" ;)</p>
+          <div className='px-5 mt-10 text-white/50'>
+            <p>Tips: coba cari "Udah berapa lama kita pacaran?" ;)</p>
           </div>
         </div>
       )}

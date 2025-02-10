@@ -7,10 +7,10 @@ function Recap() {
 
   return (
     
-    <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center p-4">
-    <div className="w-full max-w-sm sm:max-w-md text-center">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-8 text-white drop-shadow-lg">
-        Let's recap our time together
+    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-black/20">
+    <div className="w-full max-w-sm text-center sm:max-w-md">
+      <h1 className="mb-8 text-2xl font-bold text-white sm:text-4xl drop-shadow-lg">
+        Yuk intip kenangan kita bersama ❤️
       </h1>
   
       <div className="flex flex-wrap justify-center gap-10 mb-12">
@@ -21,16 +21,16 @@ function Recap() {
         ].map(({ Icon, label, path }) => (
           <div key={label} className="flex flex-col items-center">
             <button
-              className="relative group w-20 h-20 sm:w-24 sm:h-24"
+              className="relative w-20 h-20 group sm:w-24 sm:h-24"
               onClick={() => navigate(path)}
             >
-              <Heart className="absolute inset-0 w-full h-full z-0 shadow-svg" />
-              <div className="absolute inset-0 flex items-center justify-center z-10">
+              <Heart className="absolute inset-0 z-0 w-full h-full shadow-svg" />
+              <div className="absolute inset-0 z-10 flex items-center justify-center">
                 <Icon color="#C67593" />
               </div>
             </button>
             <span className="mt-4 text-sm font-medium text-white animate-bounce">
-              Click me!
+              Klik aku! 
             </span>
           </div>
         ))}
@@ -38,16 +38,16 @@ function Recap() {
   
       <div className="flex justify-between w-full">
         <button
-          className="px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
+          className="flex items-center justify-center gap-2 px-4 py-2 text-sm text-white border rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm sm:text-base border-white/50"
           onClick={() => navigate('/timer')}
         >
-          <ArrowLeft />  Previous page
+          <ArrowLeft />  Sebelumnya
         </button>
         <button
-          className="px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
-          onClick={() => navigate('/letter')}
+          className="flex items-center justify-center gap-2 px-4 py-2 text-sm text-white border rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm sm:text-base border-white/50"
+          onClick={() => navigate('/closing')}
         >
-           Next page <ArrowRight />
+           Berikutnya <ArrowRight />
         </button>
       </div>
     </div>
