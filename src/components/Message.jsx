@@ -32,7 +32,7 @@ function Message() {
             className="flex items-center justify-center gap-2 px-4 py-2 text-sm text-white border rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm border-white/50"
             onClick={() => navigate('/recap')}
           >
-            <ArrowLeft /> Previous page
+            <ArrowLeft /> Kembali
           </button>
         </div>
       </div>
