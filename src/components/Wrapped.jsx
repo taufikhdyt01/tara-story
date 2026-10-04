@@ -6,16 +6,19 @@ import { ArrowLeft } from './icons'
 import { START_DATE } from '../story'
 import { photos } from '../photos'
 
-// TODO: ganti dengan data asli
 const stats = [
   { value: differenceInDays(new Date(), START_DATE), label: 'hari bareng kamu, dan aku nggak bosen sama sekali' },
   { value: photos.length, label: 'foto kenangan di album kita' },
+  { value: 'Tiap hari → tiap minggu → tiap bulan', label: 'jadwal ketemu kita makin jarang, tapi sayangnya nggak ikut berkurang', small: true },
   { value: '±52', label: 'kali ketemu selama setahun LDR Batu–Surabaya, seminggu sekali nggak pernah absen' },
-  { value: '±80', label: 'kali date (termasuk yang cuma makan seblak)' },
+  { value: '±80', label: 'kali date, kira-kira. Sebenernya aku nggak ngitung, yang penting sama kamu' }, // TODO: angka asli kalau ada
   { value: 'Batu · Malang · Surabaya · Tasikmalaya', label: 'kota-kota yang jadi bagian cerita kita', small: true },
-  { value: 'Pesen Kopi', label: 'tempat yang paling sering kita datengin', small: true },
-  { value: 'Birthday · Konser · Study date', label: 'momen favorit aku', small: true },
-  { value: '1000x', label: 'Ghea Indrawari, lagu yang paling "kita" banget', small: true },
+  { value: 'Fore ☕', label: 'tempat yang paling sering kita datengin. Baristanya mungkin udah hafal muka kita', small: true },
+  { value: 'Sushi 🍣', label: 'makanan favorit kita berdua', small: true },
+  { value: 'Birthday · Konser · Study date · Snow date · Play date', label: 'momen favorit aku', small: true },
+  { value: 'Pendengar yang baik', label: 'katanya ini hal yang paling kamu suka dari aku. Aku bakal terus dengerin kamu kok', small: true },
+  { value: 'Kamu yang care', label: 'hal yang paling aku suka dari kamu. Bahkan dari jauh pun kamu tetep perhatian', small: true },
+  { value: '1000x · Lewati Berdua · Overnight', label: 'lagu-lagu yang paling "kita" banget', small: true },
 ]
 
 const first = photos[0]

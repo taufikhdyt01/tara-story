@@ -72,7 +72,8 @@ function Letter() {
                   <div className="message">
                     <p>Hai sayang,</p>
                     <p>Kalau kamu baca ini, berarti kita udah ketemu lagi setelah sekian lama cuma bisa video call. Aku seneng banget. Akhirnya bisa liat kamu langsung, bukan lewat layar yang suka nge-freeze pas lagi seru-serunya.</p>
-                    <p>Dua tahun ini nggak selalu gampang. Jarak, jadwal, capek, semuanya pernah bikin kita diuji. Tapi tiap kali aku mikir mau nyerah atau nggak, jawabannya selalu sama: nggak, karena itu kamu.</p>
+                    <p>Dua tahun ini nggak selalu gampang. Dari ketemu tiap hari, jadi tiap minggu, sekarang tiap bulan. Belum lagi kesibukan kita masing-masing. Tapi kamu selalu nyempetin care sama aku, bahkan dari jauh. Itu yang bikin aku makin yakin sama kamu.</p>
+                    <p>Kamu pernah bilang suka karena aku pendengar yang baik. Tenang aja, aku bakal terus jadi orang pertama yang dengerin cerita kamu, mau sejauh apa pun jaraknya.</p>
                     <p>Makasih udah jadi rumah yang bisa aku datengin walaupun jauh. Aku sayang kamu, hari ini, besok, dan seterusnya.</p>
                     <p>Taufik ❤️</p>
                   </div>

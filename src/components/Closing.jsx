@@ -38,11 +38,11 @@ function Closing() {
           </p>
 
           <p className="text-lg leading-relaxed sm:text-xl drop-shadow-lg">
-            Setahun kita LDR Batu–Surabaya, seminggu sekali ketemu, dan kita bisa. Sekarang jaraknya makin jauh, Batu–Tasikmalaya, kangennya juga makin numpuk. Tapi lihat, kita masih di sini, masih saling milih.
+            Dulu kita ketemu tiap hari. Terus jadi tiap minggu, setahun LDR Batu–Surabaya. Sekarang Batu–Tasikmalaya, jadi tiap bulan, dan nanti nggak tau bakal sejauh apa lagi. Ditambah kesibukan kita masing-masing yang makin banyak. Tapi lihat, kita masih di sini, masih saling milih.
           </p>
 
           <p className="text-lg leading-relaxed sm:text-xl drop-shadow-lg">
-            Makasih udah sabar, udah percaya, dan udah tetep genit sama aku. Yang terakhir itu jangan pernah berubah ya 😝
+            Makasih udah sabar, udah percaya, dan udah selalu care sama aku, sesibuk apa pun kamu. Makasih juga udah tetep genit sama aku. Yang terakhir itu jangan pernah berubah ya 😝
           </p>
 
           <p className="text-lg font-bold leading-relaxed sm:text-xl drop-shadow-lg">

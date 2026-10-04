@@ -8,6 +8,7 @@ function Message() {
   const messages = [
     { description: "Dua tahun, dua kota, satu orang yang sama. Makasih udah tetep di sini, sayang ❤️" },
     { description: "Batu–Tasikmalaya emang jauh, tapi kangen aku ke kamu lebih jauh lagi. Nggak sabar ketemu kamu lagi 🤍" },
+    { description: "Ketemunya boleh makin jarang, tapi kangennya nggak pernah absen. Kapan pun kamu butuh cerita, aku selalu siap dengerin 🎧" },
     { description: "Dari sekian banyak hal di dunia ini, kamu tetep jadi favorit aku. Apalagi pas lagi genit-genitnya 😝" },
     { description: "Setiap hari bersamamu adalah anugerah terindah. Aku berharap kita bisa terus bersama sampai menua. ❤️" },   
     { description: "Kamu adalah jawaban dari semua doaku. Mari kita jalani kisah ini sampai ke pelaminan, sampai kita membangun keluarga kecil yang bahagia. 💑" },
