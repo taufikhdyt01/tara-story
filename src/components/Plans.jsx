@@ -7,12 +7,12 @@ import { ArrowLeft } from './icons'
 const plans = [
   { emoji: '✈️', text: 'Liburan berdua ke tempat yang belum pernah kita datengin' },
   { emoji: '🍣', text: 'Nyobain sushi di tempat baru, atau bikin sendiri bareng' },
-  { emoji: '🎤', text: 'Nonton konser bareng lagi' },
-  { emoji: '❄️', text: 'Snow date lagi, kali ini lebih lama' },
-  { emoji: '☕', text: 'Nyobain semua menu Fore sampai habis' },
-  { emoji: '📸', text: 'Photobox tiap anniversary, biar punya koleksi tiap tahun' },
-  { emoji: '🌅', text: 'Liat sunrise bareng lagi kayak di Paralayang' },
-  { emoji: '🍳', text: 'Masak bareng pertama kali' },
+  { emoji: '🎤', text: 'Nonton konser bareng lagi, yang lebih megah kayak BTS' },
+  { emoji: '❄️', text: 'Snow date beneran ke luar negeri, liat salju asli bareng' },
+  { emoji: '📸', text: 'Photobox di setiap momen penting kita' },
+  { emoji: '🏖️', text: 'Main ke pantai bareng, liat sunset sambil ngobrol' },
+  { emoji: '🚗', text: 'Road trip berdua, ke Jogja atau ke mana aja asal bareng kamu' },
+  { emoji: '⚽', text: 'Tribun date, nonton Persib langsung di stadion bareng' },
   { emoji: '🎓', text: 'Saling support sampai kita sama-sama sukses' },
   { emoji: '💍', text: 'Melangkah ke jenjang yang lebih serius, bareng kamu' },
 ]

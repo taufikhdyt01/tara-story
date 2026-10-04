@@ -11,6 +11,8 @@ import Carousel from './Carousel';
 import Wrapped from './Wrapped';
 import VoiceNote from './VoiceNote';
 import Plans from './Plans';
+import Journey from './Journey';
+import Quiz from './Quiz';
 
 export {
   Passcode,
@@ -25,5 +27,7 @@ export {
   Message,
   Wrapped,
   VoiceNote,
-  Plans
+  Plans,
+  Journey,
+  Quiz
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Volume2, VolumeX } from 'lucide-react'
 import { motion, MotionConfig } from 'framer-motion'
-import {Closing, Letter,Passcode,Chat,Recap,Timer,Message,Music,Picture,Wrapped,VoiceNote,Plans} from './components'
+import {Closing, Letter,Passcode,Chat,Recap,Timer,Message,Music,Picture,Wrapped,VoiceNote,Plans,Journey,Quiz} from './components'
 import { bgm } from './story'
 import './index.css'
 
@@ -72,6 +72,8 @@ function AnimatedRoutes() {
         <Route path="/recap/wrapped" element={<Wrapped />} />
         <Route path="/recap/voice" element={<VoiceNote />} />
         <Route path="/recap/plans" element={<Plans />} />
+        <Route path="/recap/journey" element={<Journey />} />
+        <Route path="/recap/quiz" element={<Quiz />} />
         <Route path="/letter" element={<Letter />} />
         <Route path="/closing" element={<Closing />} />
       </Routes>

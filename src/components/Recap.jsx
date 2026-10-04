@@ -1,7 +1,7 @@
 import React from 'react'
 import { ArrowRight,ArrowLeft,Message,Image,Music,Heart } from './icons'
 import { useNavigate } from 'react-router-dom'
-import { Sparkles, Mic, ListChecks } from 'lucide-react'
+import { Sparkles, Mic, ListChecks, MapPinned, CircleHelp } from 'lucide-react'
 import '../index.css'
 function Recap() {
   const navigate = useNavigate();
@@ -22,6 +22,8 @@ function Recap() {
           { Icon: ({ color }) => <Sparkles color={color} size={28} />, label: 'Wrapped', path: '/recap/wrapped' },
           { Icon: ({ color }) => <Mic color={color} size={28} />, label: 'Voice Note', path: '/recap/voice' },
           { Icon: ({ color }) => <ListChecks color={color} size={28} />, label: 'Rencana', path: '/recap/plans' },
+          { Icon: ({ color }) => <MapPinned color={color} size={28} />, label: 'Peta', path: '/recap/journey' },
+          { Icon: ({ color }) => <CircleHelp color={color} size={28} />, label: 'Kuis', path: '/recap/quiz' },
         ].map(({ Icon, label, path }) => (
           <div key={label} className="flex flex-col items-center">
             <button
