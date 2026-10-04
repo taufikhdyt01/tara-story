@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Volume2, VolumeX } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { motion, MotionConfig } from 'framer-motion'
 import {Closing, Letter,Passcode,Chat,Recap,Timer,Message,Music,Picture,Wrapped} from './components'
 import { bgm } from './story'
 import './index.css'
@@ -79,11 +79,13 @@ function AnimatedRoutes() {
 
 function App() {
   return (
+    <MotionConfig reducedMotion="user">
     <Router>
       <FloatingHearts />
       <MusicToggle />
       <AnimatedRoutes />
     </Router>
+    </MotionConfig>
   )
 }
 

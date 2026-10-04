@@ -18,7 +18,7 @@ const stats = [
   { value: 'Birthday · Konser · Study date · Snow date · Play date', label: 'momen favorit aku', small: true },
   { value: 'Pendengar yang baik', label: 'katanya ini hal yang paling kamu suka dari aku. Aku bakal terus dengerin kamu kok', small: true },
   { value: 'Kamu yang care', label: 'hal yang paling aku suka dari kamu. Bahkan dari jauh pun kamu tetep perhatian', small: true },
-  { value: '1000x · Lewati Berdua · Overnight', label: 'lagu-lagu yang paling "kita" banget', small: true },
+  { value: '1000X · 2001x · Kita Lewati Berdua', label: 'lagu-lagu yang paling "kita" banget', small: true },
 ]
 
 const first = photos[0]

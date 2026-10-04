@@ -3,14 +3,14 @@ import picture from "./picture.png";
 
 import penjagahati from "./song/penjagahati.jpg";
 import rumahitu from "./song/rumahitu.jpg";
-import anugerahterindah from "./song/anugerahterindah.jpg";
-import tungguapalagi from "./song/tungguapalagi.jpg";
-import feather from "./song/feather.jpg";
 import adadirimu from "./song/adadirimu.jpg";
 import bermuara from "./song/bermuara.jpg";
 import lover from "./song/lover.jpg";
 import tonight from "./song/tonight.jpg";
 import sleeping from "./song/sleeping.png";
+import cover1000x from "./song/1000x.jpg";
+import cover2001x from "./song/2001x.jpg";
+import lewatiberdua from "./song/lewatiberdua.jpg";
 
 import heavenly from "./heavenly.jpg";
 import sparks from "./sparks.jpeg";
@@ -30,9 +30,9 @@ export {
   penjagahati,
   rumahitu,
   sleeping,
-  anugerahterindah,
-  tungguapalagi,
-  feather,
+  cover1000x,
+  cover2001x,
+  lewatiberdua,
   adadirimu,
   bermuara,
   lover,
