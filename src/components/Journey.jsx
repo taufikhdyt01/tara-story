@@ -18,11 +18,11 @@ const cities = {
 const stages = [
   { period: 'Agu – Sep 2024', me: 'Malang', you: 'Malang', distance: 'Sekota', note: 'Pertama kali ketemu dan mulai PDKT. Foto pertama kita di Malang Town Square, masih malu-malu.' },
   { period: 'Okt 2024 – Jan 2025', me: 'Malang', you: 'Malang', distance: 'Sekota', note: 'Resmi jadian 10 Oktober. Ketemu tiap hari, belum kepikiran bakal jauh-jauhan.' },
-  { period: 'Feb – Mei 2025', me: 'Malang', you: 'Batu', distance: '±20 km', note: 'Kamu pindah ke Batu. Cuma beda kota, tapi tetep aja kerasa ada jaraknya.' },
-  { period: 'Jun 2025 – Mei 2026', me: 'Surabaya', you: 'Batu', distance: '±100 km', note: 'Aku pindah ke Surabaya. LDR pertama kita, ketemu seminggu sekali selama setahun.' },
-  { period: 'Jun 2026', me: 'Malang', you: 'Malang', distance: 'Sekota', note: 'Aku balik ke Malang, dan kita sama-sama di Malang lagi. Rasanya kayak balik ke awal cerita kita.' },
-  { period: 'Jul – Agu 2026', me: 'Malang', you: 'Batu', distance: '±20 km', note: 'Kamu balik ke Batu. Deket, tapi udah nggak sekota lagi.' },
-  { period: 'Sep 2026 – sekarang', me: 'Tasikmalaya', you: 'Batu', distance: '±650 km', note: 'Aku pulang ke Tasikmalaya. Jarak paling jauh sejauh ini, ketemunya jadi sebulan sekali.' },
+  { period: 'Feb – Mei 2025', me: 'Malang', you: 'Batu', distance: '±20 km', note: 'Kamu pindah ke Batu buat koas di RSUD Karsa Husada. Cuma beda kota, tapi tetep aja kerasa ada jaraknya.' },
+  { period: 'Jun 2025 – Mei 2026', me: 'Surabaya', you: 'Batu', distance: '±100 km', note: 'Aku pindah ke Surabaya karena kerja. LDR pertama kita, ketemu seminggu sekali selama setahun.' },
+  { period: 'Jun 2026', me: 'Malang', you: 'Malang', distance: 'Sekota', note: 'Aku balik ke Malang buat fokus nyelesain S2, dan kamu koas di RSSA Malang. Sama-sama di Malang lagi, rasanya kayak balik ke awal cerita kita.' },
+  { period: 'Jul – Agu 2026', me: 'Malang', you: 'Batu', distance: '±20 km', note: 'Kamu balik ke Batu buat lanjut koas di sana. Deket, tapi udah nggak sekota lagi.' },
+  { period: 'Sep 2026 – sekarang', me: 'Tasikmalaya', you: 'Batu', distance: '±650 km', note: 'S2 aku udah selesai dan sekarang kerja remote, jadi aku pulang ke Tasikmalaya, sementara kamu masih berjuang koas di Batu. Jarak paling jauh sejauh ini, ketemunya jadi sebulan sekali.' },
 ]
 
 function Pin({ at, label, color, offset }) {
@@ -76,12 +76,12 @@ function Journey() {
                 strokeDasharray="4 4"
               />
             )}
-            <Pin at={you} label="U" color="#8b5cf6" offset={together ? 9 : 0} />
-            <Pin at={me} label="T" color="#f43f5e" offset={together ? -9 : 0} />
+            <Pin at={you} label="U" color="#ec4899" offset={together ? 9 : 0} />
+            <Pin at={me} label="T" color="#3b82f6" offset={together ? -9 : 0} />
           </svg>
           <div className="flex justify-center gap-4 mt-1 text-xs text-white/80">
-            <span><span className="inline-block w-2.5 h-2.5 mr-1 rounded-full bg-rose-500" />Taufik</span>
-            <span><span className="inline-block w-2.5 h-2.5 mr-1 rounded-full bg-violet-500" />Ufaira</span>
+            <span><span className="inline-block w-2.5 h-2.5 mr-1 rounded-full bg-blue-500" />Taufik</span>
+            <span><span className="inline-block w-2.5 h-2.5 mr-1 rounded-full bg-pink-500" />Ufaira</span>
           </div>
         </div>
 

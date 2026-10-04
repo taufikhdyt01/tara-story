@@ -21,6 +21,11 @@ const letters = [
     text: 'Kamu udah berusaha keras hari ini, dan aku bangga sama kamu. Istirahat dulu ya, makan yang enak, tidur yang cukup. Semua urusan bisa nunggu, kesehatan kamu lebih penting.',
   },
   {
+    emoji: '🩺',
+    label: 'kamu capek habis jaga',
+    text: 'Habis jaga ya? Pasti capek banget, apalagi kalau jaganya sampai malam. Aku bangga banget sama kamu, sayang. Nggak semua orang kuat jalanin koas, tapi kamu tetep jalan terus. Sekarang istirahat dulu, minum air putih, makan yang bener. Kalau udah sempet, kabarin aku ya. Sebentar lagi kamu jadi dokter beneran 🤍',
+  },
+  {
     emoji: '💪',
     label: 'kamu butuh semangat',
     text: 'Inget nggak, kamu udah ngelewatin banyak hal yang dulu kamu kira nggak bisa. Kamu jauh lebih hebat dari yang kamu pikir. Aku percaya sama kamu, selalu.',
@@ -34,6 +39,11 @@ const letters = [
     emoji: '😊',
     label: 'kamu lagi seneng',
     text: 'Yeay! Cerita ke aku dong, aku pengen jadi orang pertama yang ikut seneng. Senyum kamu itu salah satu hal favorit aku di dunia.',
+  },
+  {
+    emoji: '😤',
+    label: 'kamu lagi kesel sama aku',
+    text: 'Maaf ya, sayang. Mungkin aku lagi nggak peka, atau ada kata-kata aku yang nyakitin kamu. Kamu boleh kesel kok, tapi jangan dipendem sendiri ya. Kalau udah agak tenang, kita ngobrol baik-baik. Aku mau dengerin dulu, bukan buat menang, tapi biar kita baikan. Inget, kita satu tim, bukan lawan 🤍',
   },
   {
     emoji: '🤍',
