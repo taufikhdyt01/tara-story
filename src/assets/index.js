@@ -21,9 +21,7 @@ import greenday from "./greenday.jpeg";
 import kanye from "./kanye.jpeg";
 import souljaboy from "./souljaboy.jpeg";
 
-import fireworks from "./fireworks.gif";
 import christmas from "./christmas.gif";
-import couple from "./couple.gif";
 
 export {
   picture,
@@ -39,7 +37,6 @@ export {
   tonight,
   heavenly,
   christmas,
-  fireworks,
   souljaboy,
   kanye,
   greenday,
@@ -47,5 +44,4 @@ export {
   brandy,
   sunsetz,
   sparks,
-  couple,
 };
