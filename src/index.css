@@ -80,18 +80,16 @@ overflow-x: hidden;
 }
 
 .letter .body {
-  position: relative;
-  width: 240px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 18px 16px 12px;
+  overflow-y: auto;
   color: var(--base);
 }
 
 .letter .body .close {
   position: absolute;
-  right: 0;
+  right: 6px;
   top: 0;
   font-size: 20px;
   font-family: 'Manjari', sans-serif;
@@ -103,9 +101,13 @@ overflow-x: hidden;
 }
 
 .letter .body .message {
-  font-size: 16px;
-  font-weight: 900;
-  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.letter .body .message p + p {
+  margin-top: 8px;
 }
 
 .envelope {

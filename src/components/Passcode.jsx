@@ -1,13 +1,42 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { UNLOCK_DATE, bgm } from '../story'
 
 // Passcode
-const CORRECT_PASSCODE = '1010' 
+const CORRECT_PASSCODE = '1010'
+
+// Buka ?preview untuk ngetes sebelum hari-H
+const preview = new URLSearchParams(location.search).has('preview')
+
+function Locked({ now }) {
+  const s = Math.floor((UNLOCK_DATE - now) / 1000)
+  const parts = [[Math.floor(s / 86400), 'Hari'], [Math.floor(s / 3600) % 24, 'Jam'], [Math.floor(s / 60) % 60, 'Menit'], [s % 60, 'Detik']]
+  return (
+    <div className="flex flex-col items-center justify-center w-full min-h-screen px-6 text-center text-white bg-black/60 backdrop-blur-sm">
+      <h1 className="mb-2 text-2xl font-bold">Sabar ya sayang 💌</h1>
+      <p className="mb-8 text-white/80">Ada sesuatu buat kamu, tapi baru bisa dibuka tanggal 10 Oktober nanti.</p>
+      <div className="flex gap-4 font-bold">
+        {parts.map(([value, label]) => (
+          <div key={label} className="flex flex-col items-center">
+            <span className="text-4xl tabular-nums">{value.toString().padStart(2, '0')}</span>
+            <span className="text-xs font-normal text-white/70">{label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 function Passcode() {
     const [passcode, setPasscode] = useState([])
     const [message, setMessage] = useState('')
+    const [now, setNow] = useState(new Date())
     const navigate = useNavigate();
+
+    useEffect(() => {
+      const timer = setInterval(() => setNow(new Date()), 1000)
+      return () => clearInterval(timer)
+    }, [])
     const handleNumberClick = (number) => {
       if (passcode.length < 6) {
         const newPasscode = [...passcode, number]
@@ -17,6 +46,8 @@ function Passcode() {
           const enteredPasscode = newPasscode.join('')
           if (enteredPasscode === CORRECT_PASSCODE) {
             setMessage('Yeay betul!! :)')
+            // must start inside the click, browsers block autoplay otherwise
+            bgm.play().catch(() => {})
             setTimeout(() => {
               setMessage('Bentar ya...')
               navigate("/question");
@@ -37,6 +68,7 @@ function Passcode() {
       setPasscode([])
       setMessage('')
     }
+  if (now < UNLOCK_DATE && !preview) return <Locked now={now} />
   return (
     <div className="flex items-center justify-center w-full min-h-screen overflow-hidden text-white bg-black/60 backdrop-blur-sm">
         <div className="flex flex-col items-center max-w-full">

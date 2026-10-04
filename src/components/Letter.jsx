@@ -28,7 +28,8 @@ function Letter() {
       .to(letterRef.current, {
         duration: 0.7,
         ease: "back.out(0.4)",
-        translateY: -5,
+        translateY: -60,
+        height: 300,
         translateZ: 250,
       });
 
@@ -68,7 +69,13 @@ function Letter() {
               <div className="letter" ref={letterRef}>
                 <div className="body">
                   <span className="close">x</span>
-                  <div className="message">Hi, I love you so much</div>
+                  <div className="message">
+                    <p>Hai sayang,</p>
+                    <p>Kalau kamu baca ini, berarti kita udah ketemu lagi setelah sekian lama cuma bisa video call. Aku seneng banget. Akhirnya bisa liat kamu langsung, bukan lewat layar yang suka nge-freeze pas lagi seru-serunya.</p>
+                    <p>Dua tahun ini nggak selalu gampang. Jarak, jadwal, capek, semuanya pernah bikin kita diuji. Tapi tiap kali aku mikir mau nyerah atau nggak, jawabannya selalu sama: nggak, karena itu kamu.</p>
+                    <p>Makasih udah jadi rumah yang bisa aku datengin walaupun jauh. Aku sayang kamu, hari ini, besok, dan seterusnya.</p>
+                    <p>Taufik ❤️</p>
+                  </div>
                 </div>
               </div>
             </div>

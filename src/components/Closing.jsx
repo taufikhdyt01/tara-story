@@ -30,19 +30,23 @@ function Closing() {
         {/* Greeting text */}
         <div className="space-y-6 text-white">
           <h1 className="text-3xl font-bold sm:text-4xl drop-shadow-lg">
-            Happy 4 Months, Sayang! ❤️
+            Happy 2nd Anniversary, Sayang! ❤️
           </h1>
-          
+
           <p className="text-lg leading-relaxed sm:text-xl drop-shadow-lg">
-            4 bulan bersamamu terasa seperti mimpi indah yang jadi kenyataan. Meskipun waktu bersamaan kita masih sebentar, tapi rasanya udah bikin aku yakin kalau kamu adalah jawaban dari semua doa-doaku. 
+            Dua tahun lalu, 10 Oktober, kita mulai cerita ini. Dulu aku bikin website ini buat ngerayain 4 bulan, sekarang udah 2 tahun aja. Cepet banget ya, tapi rasanya kayak baru kemarin aku deg-degan nunggu kamu bales chat.
           </p>
 
           <p className="text-lg leading-relaxed sm:text-xl drop-shadow-lg">
-            Makasih ya udah mau terima aku apa adanya. Makasih udah selalu support aku dalam segala hal. Makasih udah mau berbagi tawa dan air mata sama aku. 
+            Setahun kita LDR Batu–Surabaya, seminggu sekali ketemu, dan kita bisa. Sekarang jaraknya makin jauh, Batu–Tasikmalaya, kangennya juga makin numpuk. Tapi lihat, kita masih di sini, masih saling milih.
+          </p>
+
+          <p className="text-lg leading-relaxed sm:text-xl drop-shadow-lg">
+            Makasih udah sabar, udah percaya, dan udah tetep genit sama aku. Yang terakhir itu jangan pernah berubah ya 😝
           </p>
 
           <p className="text-lg font-bold leading-relaxed sm:text-xl drop-shadow-lg">
-            I love you more each day, and I can't wait to create more beautiful memories with you! 💑
+            Aku pengen tahun-tahun berikutnya bukan cuma nambah angka, tapi juga nambah langkah, sampai ke jenjang yang lebih serius. Bismillah, aku serius sama kamu. 💍
           </p>
 
           <p className="mt-8 text-sm text-white/80">

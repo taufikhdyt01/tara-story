@@ -6,6 +6,9 @@ function Message() {
   const navigate = useNavigate();
 
   const messages = [
+    { description: "Dua tahun, dua kota, satu orang yang sama. Makasih udah tetep di sini, sayang ❤️" },
+    { description: "Batu–Tasikmalaya emang jauh, tapi kangen aku ke kamu lebih jauh lagi. Nggak sabar ketemu kamu lagi 🤍" },
+    { description: "Dari sekian banyak hal di dunia ini, kamu tetep jadi favorit aku. Apalagi pas lagi genit-genitnya 😝" },
     { description: "Setiap hari bersamamu adalah anugerah terindah. Aku berharap kita bisa terus bersama sampai menua. ❤️" },   
     { description: "Kamu adalah jawaban dari semua doaku. Mari kita jalani kisah ini sampai ke pelaminan, sampai kita membangun keluarga kecil yang bahagia. 💑" },
     { description: "Tak perlu sempurna, cukup saling melengkapi. Teruslah bersamaku, menjadi yang terakhir dalam hidupku. 💍" },

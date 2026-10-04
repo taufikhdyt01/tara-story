@@ -12,7 +12,7 @@ function Question() {
   const inputRef = useRef(null);
 
   // Customize your own Trending Searches
-  const trends = ['Kenapa Taufik selalu ada saat aku butuh ya?', 'Kenapa Taufik perhatian banget?', `Moment paling berkesan sama Taufik`,]
+  const trends = ['Jarak Batu ke Tasikmalaya berapa km?', 'Kenapa kangen Taufik terus ya?', 'Ide ngerayain anniversary 2 tahun', 'Kapan kita ketemu lagi?']
 
   const handleSearch = (e) => {
     e.preventDefault()

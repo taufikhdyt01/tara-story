@@ -1,6 +1,7 @@
 import React from 'react'
 import { ArrowRight,ArrowLeft,Message,Image,Music,Heart } from './icons'
 import { useNavigate } from 'react-router-dom'
+import { Sparkles } from 'lucide-react'
 import '../index.css'
 function Recap() {
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ function Recap() {
           { Icon: Message, label: 'Messages', path: '/recap/message' },
           { Icon: Image, label: 'Pictures', path: '/recap/pictures' },
           { Icon: Music, label: 'Music', path: '/recap/music' },
+          { Icon: ({ color }) => <Sparkles color={color} size={28} />, label: 'Wrapped', path: '/recap/wrapped' },
         ].map(({ Icon, label, path }) => (
           <div key={label} className="flex flex-col items-center">
             <button
