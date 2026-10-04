@@ -45,7 +45,7 @@ function Recap() {
         </button>
         <button
           className="flex items-center justify-center gap-2 px-4 py-2 text-sm text-white border rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm sm:text-base border-white/50"
-          onClick={() => navigate('/closing')}
+          onClick={() => navigate('/letter')}
         >
            Berikutnya <ArrowRight />
         </button>

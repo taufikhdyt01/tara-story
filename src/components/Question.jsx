@@ -7,6 +7,7 @@ import { Google } from './icons'
 function Question() {
   const [searchQuery, setSearchQuery] = useState('')
   const [isInputFocused, setIsInputFocused] = useState(false)
+  const [notFound, setNotFound] = useState(false)
   const navigate = useNavigate();
   const inputRef = useRef(null);
 
@@ -15,11 +16,11 @@ function Question() {
 
   const handleSearch = (e) => {
     e.preventDefault()
-    if (searchQuery.toLowerCase() === 'udah berapa lama kita pacaran?' || searchQuery.toLowerCase() === 'kita udah pacaran berapa lama?') {
-          navigate("/timer");
-
-    } else{
-      navigate("/question");
+    const query = searchQuery.trim().toLowerCase()
+    if (query === 'udah berapa lama kita pacaran?' || query === 'kita udah pacaran berapa lama?') {
+      navigate("/timer");
+    } else {
+      setNotFound(true)
     }
  
   }
@@ -76,7 +77,7 @@ function Question() {
               <input
                 type="text"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => { setSearchQuery(e.target.value); setNotFound(false) }}
                 className="flex-1 bg-transparent outline-none"
                 autoFocus
               />
@@ -85,6 +86,7 @@ function Question() {
             </div>
           </form>
           <div className='px-5 mt-10 text-white/50'>
+            {notFound && <p className='mb-2 text-red-400'>Hmm, hasilnya nggak ketemu. Coba kata kunci lain ya!</p>}
             <p>Tips: coba cari "Udah berapa lama kita pacaran?" ;)</p>
           </div>
         </div>

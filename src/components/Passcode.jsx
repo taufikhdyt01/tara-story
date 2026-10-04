@@ -57,7 +57,7 @@ function Passcode() {
 
             {/* Message */}
             {message && (
-            <div className={`mb-4 -mt-9 text-sm font-bold ${message === 'Yayy!! :)' ? 'text-green-500' : 'text-red-500'}`}>
+            <div className={`mb-4 -mt-9 text-sm font-bold ${passcode.join('') === CORRECT_PASSCODE ? 'text-green-500' : 'text-red-500'}`}>
                 {message}
             </div>
             )}

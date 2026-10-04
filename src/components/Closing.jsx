@@ -54,7 +54,7 @@ function Closing() {
         <div className="z-10 flex justify-center w-full mt-12">
             <button
               className="flex items-center justify-center gap-2 px-4 py-2 text-sm text-white border rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm border-white/50"
-              onClick={() => navigate('/recap')}
+              onClick={() => navigate('/letter')}
             >
               <ArrowLeft /> Kembali
             </button>

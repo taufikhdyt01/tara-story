@@ -39,9 +39,9 @@ function Picture() {
             Album Kenangan Kita
           </h1>
         <Carousel>
-          {pictures.map(({Image,title,description,index}) => (
+          {pictures.map(({Image,title,description}) => (
             <ImageCard
-              key={index}
+              key={title}
               imageUrl={Image}
               altText="Foto kenangan kita"
               title={title}
