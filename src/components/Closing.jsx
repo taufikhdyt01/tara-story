@@ -43,7 +43,7 @@ function Closing() {
           </p>
 
           <p className="text-lg leading-relaxed sm:text-xl drop-shadow-lg">
-            Makasih udah sabar, udah percaya, dan udah selalu care sama aku, sesibuk apa pun kamu. Makasih juga udah tetep genit sama aku. Yang terakhir itu jangan pernah berubah ya 😝
+            Makasih udah sabar, udah percaya, dan udah selalu care sama aku, sesibuk apa pun kamu. Perhatian kecil dari kamu itu yang bikin hari-hari aku jadi lebih ringan 🤍
           </p>
 
           <p className="text-lg font-bold leading-relaxed sm:text-xl drop-shadow-lg">
