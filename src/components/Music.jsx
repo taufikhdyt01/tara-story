@@ -16,22 +16,10 @@ const songs = [
   link: "https://open.spotify.com/album/6Af2yNV7t9ThcHfYboQLQN",
 },
 {
-  title: "2001x",
-  artist: "Adrian Khalif",
-  albumCover: cover2001x,
-  link: "https://open.spotify.com/track/7EkTXoaED7peReoRytElSi",
-},
-{
   title: "Kita Lewati Berdua",
   artist: "Overnight",
   albumCover: lewatiberdua,
   link: "https://open.spotify.com/album/5MUKAQZAisxQQqMmfTx4M4",
-},
-{
-  title: "Penjaga Hati",
-  artist: "Nadhif Basalamah",
-  albumCover: penjagahati,
-  link: "https://open.spotify.com/track/6i9Ci0IN1q1GcnhdbKU7kZ",
 },
 {
   title: "Kita Usahakan Rumah Itu",
@@ -40,22 +28,34 @@ const songs = [
   link: "https://open.spotify.com/track/5Egm9N7FnzsThl1CFXB2mm",
 },
 {
+  title: "Penjaga Hati",
+  artist: "Nadhif Basalamah",
+  albumCover: penjagahati,
+  link: "https://open.spotify.com/track/6i9Ci0IN1q1GcnhdbKU7kZ",
+},
+{
   title: "I'd Like to Watch You Sleeping",
   artist: "Sal Priadi",
   albumCover: sleeping,
   link: "https://open.spotify.com/track/0Y7dCFSIdB9vJ8nnVIAfuv",
 },
 {
-  title: "Semenjak Ada Dirimu",
-  artist: "Yovie Widianto, HIVI!",
-  albumCover: adadirimu,
-  link: "https://open.spotify.com/track/5H4MSA6eIr6x1iBTn1vpMG",
+  title: "2001x",
+  artist: "Adrian Khalif",
+  albumCover: cover2001x,
+  link: "https://open.spotify.com/track/7EkTXoaED7peReoRytElSi",
 },
 {
   title: "Bermuara",
   artist: "Rizky Febian, Mahalini",
   albumCover: bermuara,
   link: "https://open.spotify.com/track/2EijGQoEilhHWlQWMoS9Jc",
+},
+{
+  title: "Semenjak Ada Dirimu",
+  artist: "Yovie Widianto, HIVI!",
+  albumCover: adadirimu,
+  link: "https://open.spotify.com/track/5H4MSA6eIr6x1iBTn1vpMG",
 },
 ];
 

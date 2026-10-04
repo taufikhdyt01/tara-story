@@ -11,7 +11,7 @@ const stats = [
   { value: photos.length, label: 'foto kenangan di album kita' },
   { value: 'Tiap hari → tiap minggu → tiap bulan', label: 'jadwal ketemu kita makin jarang, tapi sayangnya nggak ikut berkurang', small: true },
   { value: '±52', label: 'kali ketemu selama setahun LDR Batu–Surabaya, seminggu sekali nggak pernah absen' },
-  { value: '±80', label: 'kali date, kira-kira. Sebenernya aku nggak ngitung, yang penting sama kamu' }, // TODO: angka asli kalau ada
+  { value: '100+', label: 'kali date. Kebanyakan sampai nggak bisa disebutin satu-satu 🥰' },
   { value: 'Batu · Malang · Surabaya · Tasikmalaya', label: 'kota-kota yang jadi bagian cerita kita', small: true },
   { value: 'Fore ☕', label: 'tempat yang paling sering kita datengin. Baristanya mungkin udah hafal muka kita', small: true },
   { value: 'Sushi 🍣', label: 'makanan favorit kita berdua', small: true },
