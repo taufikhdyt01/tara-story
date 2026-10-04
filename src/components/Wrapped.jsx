@@ -42,7 +42,7 @@ const slides = [
     bg: 'from-violet-600 to-fuchsia-500',
     content: () => (
       <>
-        <Reveal className="text-2xl">Hai sayang 👋</Reveal>
+        <Reveal className="text-2xl">Hai Ufaira 👋</Reveal>
         <Reveal delay={0.8} className="mt-4 text-5xl font-black leading-tight">Siap liat 2 tahun kita?</Reveal>
         <Reveal delay={2} className="mt-10 text-sm text-white/80">Ketuk kanan untuk lanjut →</Reveal>
       </>
@@ -69,16 +69,6 @@ const slides = [
           <Reveal delay={2.4} className="text-white/80">→ tiap bulan</Reveal>
         </div>
         <Reveal delay={3.4} className="text-xl">Makin jarang, tapi sayangnya nggak ikut berkurang 🤍</Reveal>
-      </>
-    ),
-  },
-  {
-    bg: 'from-sky-500 to-indigo-700',
-    content: () => (
-      <>
-        <Reveal className="text-2xl">Setahun LDR Batu–Surabaya, kita ketemu</Reveal>
-        <Reveal delay={0.8} className="my-6"><Big>±<CountUp to={52} delay={0.8} /></Big><p className="mt-2 text-3xl font-bold">kali</p></Reveal>
-        <Reveal delay={2.6} className="text-xl">Seminggu sekali, nggak pernah absen 🚗</Reveal>
       </>
     ),
   },
@@ -186,7 +176,7 @@ function Summary({ onReplay, onExit }) {
             ))}
           </div>
         </div>
-        <p className="mt-5 text-2xl text-center font-hand text-rose-600">Taufik ❤️ Kamu</p>
+        <p className="mt-5 text-2xl text-center font-hand text-rose-600">Taufik ❤️ Ufaira</p>
       </Reveal>
       <Reveal delay={0.8} className="flex gap-3 mt-6 pointer-events-auto">
         <button onClick={onReplay} className="px-5 py-2 font-bold text-white border rounded-full border-white/60">Lihat lagi</button>
