@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowLeft } from "./icons";
-import { Music2 } from "lucide-react";
+import { Music2, Play } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useRef } from "react";
@@ -9,18 +9,22 @@ import { penjagahati, rumahitu, sleeping, anugerahterindah, tungguapalagi, feath
 function Music() {
   const navigate = useNavigate();
   // albumCover opsional: tanpa cover tampil ikon musik
+  // link opsional: isi link Spotify, kartunya jadi bisa diketuk untuk buka lagu
   const songs = [
   {
     title: "1000x",
     artist: "Ghea Indrawari",
+    link: "",
   },
   {
     title: "Lewati Berdua",
     artist: "", // TODO: nama penyanyi
+    link: "",
   },
   {
     title: "Overnight",
     artist: "", // TODO: nama penyanyi
+    link: "",
   },
   {
     title: "Penjaga Hati",
@@ -84,6 +88,8 @@ function Music() {
             }}
             drag
             dragConstraints={containerRef} // Adjust to container size
+            // framer-motion skips onTap after a drag, so dragging won't open the song
+            onTap={() => song.link && window.open(song.link, '_blank')}
           >
             <div className="bg-white/10 backdrop-blur-lg rounded-xl p-4 flex items-center gap-4 w-56 h-[4rem]">
               <div className="flex-shrink-0 w-12 h-12">
@@ -105,6 +111,7 @@ function Music() {
                 </h2>
                 <p className="text-xs truncate text-white/70">{song.artist}</p>
               </div>
+              {song.link && <Play className="flex-shrink-0 w-4 h-4 text-white fill-white" />}
             </div>
           </motion.div>
         ))}

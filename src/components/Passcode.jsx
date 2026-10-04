@@ -12,7 +12,7 @@ function Locked({ now }) {
   const s = Math.floor((UNLOCK_DATE - now) / 1000)
   const parts = [[Math.floor(s / 86400), 'Hari'], [Math.floor(s / 3600) % 24, 'Jam'], [Math.floor(s / 60) % 60, 'Menit'], [s % 60, 'Detik']]
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen px-6 text-center text-white bg-black/60 backdrop-blur-sm">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen px-6 text-center text-white">
       <h1 className="mb-2 text-2xl font-bold">Sabar ya sayang 💌</h1>
       <p className="mb-8 text-white/80">Ada sesuatu buat kamu, tapi baru bisa dibuka tanggal 10 Oktober nanti.</p>
       <div className="flex gap-4 font-bold">
@@ -70,10 +70,10 @@ function Passcode() {
     }
   if (now < UNLOCK_DATE && !preview) return <Locked now={now} />
   return (
-    <div className="flex items-center justify-center w-full min-h-screen overflow-hidden text-white bg-black/60 backdrop-blur-sm">
+    <div className="flex items-center justify-center w-full min-h-screen overflow-hidden text-white">
         <div className="flex flex-col items-center max-w-full">
             {/* Title */}
-            <h1 className="mb-8 text-2xl font-light">Masukkan Kode</h1>
+            <h1 className="mb-8 text-4xl font-bold drop-shadow-lg">Masukkan Kode</h1>
 
             {/* Passcode Dots */}
             <div className="flex gap-4 mb-16">
@@ -81,7 +81,7 @@ function Passcode() {
                 <div
                 key={i}
                 className={`w-3.5 h-3.5 rounded-full ${
-                    i < passcode.length ? 'bg-white' : 'border-2 border-zinc-500'
+                    i < passcode.length ? 'bg-white' : 'border-2 border-white/70'
                 }`}
                 />
             ))}
@@ -89,7 +89,7 @@ function Passcode() {
 
             {/* Message */}
             {message && (
-            <div className={`mb-4 -mt-9 text-sm font-bold ${passcode.join('') === CORRECT_PASSCODE ? 'text-green-500' : 'text-red-500'}`}>
+            <div className={`mb-4 -mt-10 px-4 py-1.5 text-sm font-bold text-white rounded-full ${passcode.join('') === CORRECT_PASSCODE ? 'bg-emerald-500/80' : 'bg-rose-700/70'}`}>
                 {message}
             </div>
             )}
@@ -110,17 +110,17 @@ function Passcode() {
                 <button
                 key={num}
                 onClick={() => handleNumberClick(num)}
-                className="flex items-center justify-center w-16 h-16 transition-colors rounded-full bg-zinc-800/50 hover:bg-zinc-700/50 active:bg-zinc-600/50"
+                className="flex items-center justify-center w-16 h-16 transition-colors rounded-full bg-white/20 border border-white/40 backdrop-blur-sm hover:bg-white/30 active:bg-white/40 shadow-sm"
                 >
-                <span className="text-3xl font-light">{num}</span>
+                <span className="text-3xl font-semibold drop-shadow">{num}</span>
                 </button>
             ))}
             <div className="col-start-2">
                 <button
                 onClick={() => handleNumberClick(0)}
-                className="flex items-center justify-center w-16 h-16 transition-colors rounded-full bg-zinc-800/50 hover:bg-zinc-700/50 active:bg-zinc-600/50"
+                className="flex items-center justify-center w-16 h-16 transition-colors rounded-full bg-white/20 border border-white/40 backdrop-blur-sm hover:bg-white/30 active:bg-white/40 shadow-sm"
                 >
-                <span className="text-3xl font-light">0</span>
+                <span className="text-3xl font-semibold drop-shadow">0</span>
                 </button>
             </div>
             </div>
@@ -128,7 +128,7 @@ function Passcode() {
             {/* Cancel Button */}
             <button
             onClick={handleCancel}
-            className="text-lg transition-colors text-white/90 hover:text-white active:text-white/70"
+            className="text-lg font-bold drop-shadow transition-colors text-white/90 hover:text-white active:text-white/70"
             >
             Hapus
             </button>

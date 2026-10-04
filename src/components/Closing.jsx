@@ -1,5 +1,6 @@
 import React from 'react'
 import {ArrowLeft } from './icons'
+import { MessageCircleHeart } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { fireworks,couple } from '../assets';
 
@@ -54,8 +55,18 @@ function Closing() {
           </p>
         </div>
 
+        {/* Reply via WhatsApp */}
+        <a
+          href={`https://wa.me/62895395793881?text=${encodeURIComponent('Happy 2nd anniversary juga sayang ❤️ ')}`}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 mt-10 font-bold bg-white rounded-full shadow-lg text-rose-600 active:scale-95"
+        >
+          <MessageCircleHeart className="w-5 h-5" /> Balas ke Taufik 💌
+        </a>
+
         {/* Button */}
-        <div className="z-10 flex justify-center w-full mt-12">
+        <div className="z-10 flex justify-center w-full mt-8">
             <button
               className="flex items-center justify-center gap-2 px-4 py-2 text-sm text-white border rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm border-white/50"
               onClick={() => navigate('/letter')}
