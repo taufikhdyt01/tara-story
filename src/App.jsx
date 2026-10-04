@@ -20,8 +20,8 @@ function MusicToggle() {
     }
   }, [])
 
-  // hidden on the chat too, it would cover the call icons in its header
-  if (pathname === '/' || pathname === '/chat') return null
+  // hidden where it would cover page controls (chat header icons, wrapped close button)
+  if (pathname === '/' || pathname === '/chat' || pathname === '/recap/wrapped') return null
   return (
     <button
       aria-label={playing ? 'Matikan musik' : 'Putar musik'}
