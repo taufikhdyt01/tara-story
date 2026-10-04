@@ -1,7 +1,7 @@
 import React from 'react'
 import { ArrowRight,ArrowLeft,Message,Image,Music,Heart } from './icons'
 import { useNavigate } from 'react-router-dom'
-import { Sparkles } from 'lucide-react'
+import { Sparkles, Mic, ListChecks } from 'lucide-react'
 import '../index.css'
 function Recap() {
   const navigate = useNavigate();
@@ -16,10 +16,12 @@ function Recap() {
   
       <div className="flex flex-wrap justify-center gap-10 mb-12">
         {[
-          { Icon: Message, label: 'Messages', path: '/recap/message' },
-          { Icon: Image, label: 'Pictures', path: '/recap/pictures' },
-          { Icon: Music, label: 'Music', path: '/recap/music' },
+          { Icon: Message, label: 'Surat', path: '/recap/message' },
+          { Icon: Image, label: 'Foto', path: '/recap/pictures' },
+          { Icon: Music, label: 'Musik', path: '/recap/music' },
           { Icon: ({ color }) => <Sparkles color={color} size={28} />, label: 'Wrapped', path: '/recap/wrapped' },
+          { Icon: ({ color }) => <Mic color={color} size={28} />, label: 'Voice Note', path: '/recap/voice' },
+          { Icon: ({ color }) => <ListChecks color={color} size={28} />, label: 'Rencana', path: '/recap/plans' },
         ].map(({ Icon, label, path }) => (
           <div key={label} className="flex flex-col items-center">
             <button
@@ -31,8 +33,8 @@ function Recap() {
                 <Icon color="#C67593" />
               </div>
             </button>
-            <span className="mt-4 text-sm font-medium text-white animate-bounce">
-              Klik aku! 
+            <span className="mt-3 text-sm font-bold text-white drop-shadow">
+              {label}
             </span>
           </div>
         ))}

@@ -9,6 +9,8 @@ import Picture from './Picture';
 import Message from './Message';
 import Carousel from './Carousel';
 import Wrapped from './Wrapped';
+import VoiceNote from './VoiceNote';
+import Plans from './Plans';
 
 export {
   Passcode,
@@ -21,5 +23,7 @@ export {
   Music,
   Carousel,
   Message,
-  Wrapped
+  Wrapped,
+  VoiceNote,
+  Plans
 }
