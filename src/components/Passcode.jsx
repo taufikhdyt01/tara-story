@@ -50,7 +50,7 @@ function Passcode() {
             bgm.play().catch(() => {})
             setTimeout(() => {
               setMessage('Bentar ya...')
-              navigate("/question");
+              navigate("/chat");
               
             }, 500)
           } else {

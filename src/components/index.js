@@ -1,5 +1,5 @@
 import Passcode from './Passcode';
-import Question from './Question';
+import Chat from './Chat';
 import Timer from './Timer';
 import Recap from './Recap';
 import Letter from './Letter';
@@ -12,7 +12,7 @@ import Wrapped from './Wrapped';
 
 export {
   Passcode,
-  Question,
+  Chat,
   Timer,
   Recap,
   Letter,

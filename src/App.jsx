@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Volume2, VolumeX } from 'lucide-react'
 import { motion } from 'framer-motion'
-import {Closing, Letter,Passcode,Question,Recap,Timer,Message,Music,Picture,Wrapped} from './components'
+import {Closing, Letter,Passcode,Chat,Recap,Timer,Message,Music,Picture,Wrapped} from './components'
 import { bgm } from './story'
 import './index.css'
 
@@ -20,7 +20,8 @@ function MusicToggle() {
     }
   }, [])
 
-  if (pathname === '/') return null
+  // hidden on the chat too, it would cover the call icons in its header
+  if (pathname === '/' || pathname === '/chat') return null
   return (
     <button
       aria-label={playing ? 'Matikan musik' : 'Putar musik'}
@@ -62,7 +63,7 @@ function AnimatedRoutes() {
     <motion.div key={location.pathname} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
       <Routes location={location}>
         <Route path="/" element={<Passcode />} />
-        <Route path="/question" element={<Question />} />
+        <Route path="/chat" element={<Chat />} />
         <Route path="/timer" element={<Timer />} />
         <Route path="/recap" element={<Recap />} />
         <Route path="/recap/message" element={<Message />} />
