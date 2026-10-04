@@ -21,7 +21,7 @@ function Timer() {
 
   return (
     <div
-  className="relative flex flex-col items-center justify-center min-h-screen px-4 text-white bg-center bg-cover bg-black/20"
+  className="relative flex flex-col items-center justify-center min-h-screen px-4 text-white bg-center bg-cover"
 >
   <div className="z-10 text-center">
     {/* Title */}

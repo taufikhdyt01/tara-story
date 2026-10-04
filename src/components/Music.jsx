@@ -68,7 +68,7 @@ function Music() {
   const containerRef = useRef(null);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black/20">
+    <div className="flex flex-col items-center justify-center min-h-screen">
     <div className="w-[90%] max-w-[400px]">
       <h1 className="mt-4 -mb-4 text-2xl font-bold text-center text-white sm:text-2xl drop-shadow-lg">
         Lagu yang menggambarkan hubungan kita

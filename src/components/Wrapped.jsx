@@ -25,7 +25,7 @@ function Wrapped() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center min-h-screen py-16 bg-black/20">
+    <div className="flex flex-col items-center min-h-screen py-16">
       <div className="w-[90%] max-w-[400px] space-y-4">
         <h1 className="mb-8 text-3xl font-bold text-center text-white drop-shadow-lg">
           Our 2 Years Wrapped ✨

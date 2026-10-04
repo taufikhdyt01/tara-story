@@ -17,7 +17,7 @@ function Message() {
   ]
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-black/20">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="w-[90%] max-w-[400px]">
         <div className="space-y-4">
           {messages.map((message, index) => (

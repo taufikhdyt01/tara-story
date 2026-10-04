@@ -60,7 +60,7 @@ function Letter() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black/20 flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <div className='w-[90%] max-w-[400px]'>
           <div className="flex-grow flex items-center justify-center h-[400px]">
           <div className="letter-container">
@@ -87,13 +87,13 @@ function Letter() {
               className="px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
               onClick={() => navigate('/recap')}
             >
-              <ArrowLeft />  Previous page
+              <ArrowLeft /> Sebelumnya
             </button>
             <button
               className="px-4 py-2 flex justify-center items-center bg-white/20 gap-2 hover:bg-white/30 backdrop-blur-sm text-white text-sm sm:text-base border border-white/50 rounded-lg"
               onClick={() => navigate('/closing')}
             >
-              Next page <ArrowRight />
+              Berikutnya <ArrowRight />
             </button>
           </div>
         

@@ -7,7 +7,7 @@ function Closing() {
   const navigate = useNavigate();
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen p-4 bg-black/20">
+    <div className="relative flex flex-col items-center justify-center min-h-screen p-4">
       {/* Fireworks background */}
       <div className="absolute inset-0 z-0">
         <img

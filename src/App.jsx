@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Volume2, VolumeX } from 'lucide-react'
+import { motion } from 'framer-motion'
 import {Closing, Letter,Passcode,Question,Recap,Timer,Message,Music,Picture,Wrapped} from './components'
 import { bgm } from './story'
 import './index.css'
@@ -31,11 +32,35 @@ function MusicToggle() {
   )
 }
 
-function App() {
+const hearts = Array.from({ length: 14 }, () => ({
+  left: Math.random() * 100,
+  size: 10 + Math.random() * 18,
+  duration: 9 + Math.random() * 10,
+  delay: -Math.random() * 19,
+}))
+
+function FloatingHearts() {
   return (
-    <Router>
-      <MusicToggle />
-      <Routes>
+    <div aria-hidden className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+      {hearts.map((h, i) => (
+        <span
+          key={i}
+          className="floating-heart"
+          style={{ left: `${h.left}%`, fontSize: h.size, animationDuration: `${h.duration}s`, animationDelay: `${h.delay}s` }}
+        >
+          ❤
+        </span>
+      ))}
+    </div>
+  )
+}
+
+function AnimatedRoutes() {
+  const location = useLocation()
+  // opacity only: a transform here would break position:fixed inside pages
+  return (
+    <motion.div key={location.pathname} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+      <Routes location={location}>
         <Route path="/" element={<Passcode />} />
         <Route path="/question" element={<Question />} />
         <Route path="/timer" element={<Timer />} />
@@ -47,6 +72,16 @@ function App() {
         <Route path="/letter" element={<Letter />} />
         <Route path="/closing" element={<Closing />} />
       </Routes>
+    </motion.div>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <FloatingHearts />
+      <MusicToggle />
+      <AnimatedRoutes />
     </Router>
   )
 }

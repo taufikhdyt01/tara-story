@@ -8,7 +8,7 @@ function Recap() {
 
   return (
     
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-black/20">
+    <div className="flex flex-col items-center justify-center min-h-screen p-4">
     <div className="w-full max-w-sm text-center sm:max-w-md">
       <h1 className="mb-8 text-2xl font-bold text-white sm:text-4xl drop-shadow-lg">
         Yuk intip kenangan kita bersama ❤️
