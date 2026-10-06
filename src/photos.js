@@ -1,7 +1,7 @@
 import captionsRaw from './assets/photo/captions.txt?raw'
 
 // Every image in assets/photo named YYYY-MM-DD(.jpg|.jpeg|.png|.webp), optional suffix like 2025-03-14-2
-const files = import.meta.glob('./assets/photo/*.{jpg,jpeg,png,webp}', { eager: true, import: 'default' })
+const files = import.meta.glob('./assets/photo/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true, import: 'default' })
 
 const captions = Object.fromEntries(
   captionsRaw.split('\n')

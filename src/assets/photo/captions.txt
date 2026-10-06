@@ -1,5 +1,5 @@
-Format: nama-file-tanpa-ekstensi | caption
-Baris tanpa tanda | diabaikan. Foto tanpa caption tetap tampil.
+Format: nama-file-tanpa-ekstensi, lalu tanda pipa, lalu caption
+Baris tanpa tanda pipa diabaikan. Foto tanpa caption tetap tampil.
 
 2024-08-29 | First photo kita! Masih malu-malu habis nonton di Malang Town Square. Awal dari semua kenangan indah kita ❤️
 2024-09-09 | BBQ di Thana. Hari dimana aku mulai mengungkapkan keseriusan hubungan sama kamu 🫶
@@ -17,3 +17,79 @@ Baris tanpa tanda | diabaikan. Foto tanpa caption tetap tampil.
 2025-01-10 | Quality time di Milenial Glow Garden JTP 3. Cantik lampunya, tapi lebih cantik kamu 💫
 2025-02-03 | Maskeran bareng setelah 2 minggu LDR. Kangen quality time kaya gini sama kamu 🤗
 2025-02-07 | Movie date di Transmart. Film nya bagus, tapi lebih bagus nontonnya sama kamu 🎬
+2025-02-07-2 | Nintendo date kedua kali. Masih seru kayak yang pertama 🎮
+2025-02-22 | Hari wisuda kamu! Bangga banget bisa ada di sana nemenin kamu 🎓
+2025-03-02 | Buka bersama pertama kita. Takjil rasanya lebih enak kalau sama kamu 🌙
+2025-04-08 | Movie date di Cinepolis Batu. Sekarang kamu orang Batu ya 🍿
+2025-04-13 | Movie date lagi di Transmart XXI. Nggak pernah bosen nonton sama kamu 🎬
+2025-04-13-2 | Lanjut makan di Solaria habis nonton. Paket lengkap 🍽️
+2025-04-13-3 | Photobox kedua kita! Gayanya udah lebih pede dari yang pertama 📸
+2025-04-17 | Nonton Komang di Batu. Filmnya bikin baper, untung ada kamu di sebelah 🥹
+2025-04-19 | Carnival date di JTP 3. Rame, terang, seru, kayak hari-hari sama kamu 🎡
+2025-04-26 | Steak date. Kenyang, seneng, dan pastinya bareng kamu 🥩
+2025-05-03 | Treatment bareng. Biar makin glowing berdua ✨
+2025-05-03-2 | Habis treatment langsung movie date. Self care tapi couple version 🍿
+2025-05-12 | Nonton Jumbo sampai malam. Pulang telat tapi hati seneng 🌙
+2025-05-17 | Kamu datang ke wisuda aku. Makasih udah jadi bagian dari hari penting itu 🎓
+2025-05-29 | Mirror selfie habis study date. Belajarnya serius, fotonya juga 😌
+2025-05-31 | Study date lagi. Fokus belajar, sesekali fokus ke kamu 📚
+2025-06-01 | Ngerayain ulang tahun aku bareng kamu. Kado terbaiknya ya kamu 🎂
+2025-06-07 | Sholat Idul Adha bareng di UB. Momen yang adem banget 🕌
+2025-06-07-2 | Habis sholat Ied lanjut nonton. Lebaran versi kita 🍿
+2025-06-11 | Study date. Belajar jadi nggak terasa berat kalau ada kamu 📚
+2025-06-20 | Movie date terakhir sebelum aku pindah ke Surabaya. Berat, tapi kita pasti bisa 🤍
+2025-06-28 | Aku main ke Malang setelah pindah ke Surabaya. Kangennya langsung kebayar 🥰
+2025-07-12 | Pertama kali kamu nyamperin aku ke Surabaya. Foto di Ciputra World, seneng banget kamu dateng 🥹
+2025-07-13 | Pertama kali nge-mall bareng di Tunjungan Plaza 🛍️
+2025-07-19 | Gantian aku yang nyamperin kamu ke Batu, langsung movie date 🍿
+2025-07-28 | Mirror selfie di TP, di tempat yang sama kayak sebelumnya. Tempatnya sama, kangennya nambah 😌
+2025-08-02 | Konser date pertama kita di SOD! Teriak-teriak bareng sampai suara habis 🎤
+2025-08-03 | Movie date nonton Sore di Ciputra World 🎬
+2025-08-09 | Movie date lagi di Ciputra World. Udah kayak tempat langganan kita 🍿
+2025-08-09-2 | Pertama kali main ke Pakuwon City. Jalan-jalan sore berdua 🌇
+2025-08-17 | Museum date pertama kita di Surabaya, pas Hari Kemerdekaan 🇮🇩
+2025-08-17-2 | Habis dari museum lanjut movie date. Merdeka tapi tetep bucin 🍿
+2025-08-23 | Makan di Jatinangor Surabaya. Kenyang dan seneng 🍜
+2025-09-05 | Stadion date pertama kali, nonton Timnas! Seru banget teriak bareng kamu ⚽
+2025-10-05 | Konser Tulus di Ciputra World. Lagu-lagunya pas banget buat kita 🎶
+2025-10-10 | Ngerayain anniversary pertama kita. Satu tahun, dan masih sayang banget sama kamu ❤️
+2025-10-11 | Main ke PRJ Surabaya. Rame-rame tapi aku cuma liatin kamu 🎪
+2025-10-12 | Makan di Jatinangor lagi. Udah jadi favorit ya 🍜
+2025-11-01 | Movie date sehari sebelum ulang tahun kamu. Pemanasan dulu 🍿
+2025-11-02 | Happy 21st birthday sayangku! Semoga semua yang kamu impikan tercapai 🎂
+2025-11-23 | Makan habis aku curhat panjang. Makasih udah jadi tempat cerita aku 🤍
+2025-11-29 | Mirror selfie di Ciputra World, cakep banget. Jadi kangen Ciwo 🥹
+2025-11-30 | Fore date. Tempat yang selalu jadi andalan kita ☕
+2025-12-07 | Treatment date di Surabaya. Glowing berdua lagi ✨
+2025-12-16 | Kamu datang ke sempro aku. Makasih udah selalu ada di momen penting 🎓
+2025-12-21 | Nonton Avatar di IMAX. Layarnya gede, tapi tetep kamu yang paling memukau 🎬
+2025-12-28 | Movie date bareng cast Musuh dalam Selimut. Pengalaman yang seru banget 🎬
+2026-01-01 | Tahun baru di Surabaya. Tahun baru, orangnya tetep kamu 🎆
+2026-01-10 | Snow date di Trans Snow World Surabaya! Salju pertama kita, walaupun masih versi indoor ❄️
+2026-01-18 | Piknik di Kebun Raya. Adem, hijau, dan santai berdua 🌿
+2026-01-18-2 | Habis perjalanan Malang–Surabaya langsung movie date. Capek ilang 🍿
+2026-01-24 | Movie date di Trans Icon Mall 🎬
+2026-01-24-2 | Naik perahu di Kalimas, liat city light Surabaya malam-malam. Romantis banget 🌃
+2026-01-31 | Konser date lagi di Surabaya! Nggak pernah bosen nonton konser bareng kamu 🎤
+2026-02-22 | Movie date habis treatment. Rutinitas favorit kita 🍿
+2026-02-28 | Buka bersama di Batu. Ramadhan kedua kita 🌙
+2026-03-07 | Konser date pas Ramadhan. Habis buka langsung nyanyi bareng 🎶
+2026-03-08 | Movie date di BG Junction 🎬
+2026-03-15 | Main ke BPlay di Ciputra World. Jiwa bocil kita keluar 🎮
+2026-03-16 | Photobox di Jalan Tunjungan. Koleksi foto kita nambah lagi 📸
+2026-05-02 | Konser gratis JConnect. Gratis tapi serunya nggak kalah 🎤
+2026-05-09 | Movie date nonton Dilan. Ikut baper bareng 🎬
+2026-05-14 | Zoo date di Galaxy Mall. Lucu-lucu hewannya, tapi kamu tetep paling lucu 🐾
+2026-05-16 | Movie date di Plaza Surabaya 🍿
+2026-05-23 | Kamu nemenin aku nobar Persib bareng Viking Surabaya. Makasih udah mau ikut 💙
+2026-05-25 | Movie date lagi di BG Junction 🎬
+2026-06-01 | Ulang tahun aku tahun ini happy banget, karena ada kamu 🎂
+2026-06-05 | Foto di lift kantor Ciwo, hari-hari terakhir aku kerja di Surabaya sebelum resign 🏢
+2026-06-28 | Konser Tanjung Perak Jazz di Surabaya. Musiknya santai, momennya manis 🎷
+2026-06-29 | Kamu datang ke semhas aku. Selalu ada di setiap langkah aku 🤍
+2026-07-27 | Finally sidang dan (unofficially) M.Kom, ditemani kamu. Makasih udah nemenin sampai akhir 🎓
+2026-07-29 | Movie date nonton Spiderman di Luxe 🕷️
+2026-08-01 | Konser date SOD 2026, day 1! Setahun lalu konser pertama kita juga di sini 🎤
+2026-08-02 | SOD 2026 day 2. Dua hari berturut-turut, tetep nggak capek kalau sama kamu 🎶
+2026-08-30 | Play date ke Mikutopia sebelum aku pulang. Main sepuasnya dulu 🎠
+2026-08-30-2 | Foto studio dulu sebelum aku pulang ke Tasikmalaya. Biar ada kenang-kenangan 📷

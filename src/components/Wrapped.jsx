@@ -83,6 +83,18 @@ const slides = [
     ),
   },
   {
+    bg: 'from-red-600 to-zinc-900',
+    content: () => (
+      <>
+        <Reveal className="text-2xl">Dari semua date itu, kita nonton bioskop</Reveal>
+        <Reveal delay={0.8} className="my-4"><Big><CountUp to={50} delay={0.8} />+</Big><p className="mt-2 text-3xl font-bold">kali 🍿</p></Reveal>
+        <Reveal delay={2.4} className="mt-6 text-2xl">dan nonton konser</Reveal>
+        <Reveal delay={3.2} className="my-4"><Big><CountUp to={10} delay={3.2} />+</Big><p className="mt-2 text-3xl font-bold">kali 🎤</p></Reveal>
+        <Reveal delay={4.6} className="text-xl">Itu baru yang sempet kehitung, yang nggak difoto lebih banyak lagi 😆</Reveal>
+      </>
+    ),
+  },
+  {
     bg: 'from-amber-400 to-orange-600',
     content: () => (
       <>
@@ -154,6 +166,8 @@ function Summary({ onReplay, onExit }) {
   const rows = [
     ['Hari bareng', days],
     ['Total date', '100+'],
+    ['Movie date', '50+'],
+    ['Konser', '10+'],
     ['Lagu kita', '1000X'],
     ['Tempat favorit', 'Fore'],
     ['Makanan favorit', 'Sushi'],

@@ -10,6 +10,8 @@ const years = [...new Set(photos.map(p => p.year))]
 function Picture() {
   const navigate = useNavigate();
   const [year, setYear] = useState(years[0])
+  const [slide, setSlide] = useState(0)
+  const yearPhotos = photos.filter(p => p.year === year)
 
   return (
 
@@ -24,7 +26,7 @@ function Picture() {
           {years.map(y => (
             <button
               key={y}
-              onClick={() => setYear(y)}
+              onClick={() => { setYear(y); setSlide(0) }}
               className={`px-4 py-1 text-sm rounded-full border border-white/50 ${y === year ? 'bg-white text-gray-800' : 'bg-white/20 text-white'}`}
             >
               {y}
@@ -32,8 +34,9 @@ function Picture() {
           ))}
         </div>
 
-        <Carousel key={year}>
-          {photos.filter(p => p.year === year).map(p => (
+        {/* dots don't fit dozens of photos, so show a counter instead */}
+        <Carousel key={year} dots={false} afterChange={setSlide}>
+          {yearPhotos.map(p => (
             <ImageCard
               key={p.name}
               imageUrl={p.src}
@@ -43,6 +46,7 @@ function Picture() {
             />
           ))}
         </Carousel>
+        <p className="text-sm text-center text-white/80">{slide + 1} / {yearPhotos.length} · geser untuk lihat foto lain</p>
 
         <div className="flex justify-center w-full mt-12 mb-8">
           <button

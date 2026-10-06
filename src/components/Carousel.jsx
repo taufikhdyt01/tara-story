@@ -10,9 +10,12 @@ const Carousel = ({
   slidesToShowMobile = 1,
   autoplay = false,
   autoplaySpeed = 3000,
+  dots = true,
+  afterChange,
 }) => {
   const settings = {
-    dots: true,
+    dots,
+    afterChange,
     infinite: true,
     speed: 500,
     slidesToShow: slidesToShow,
