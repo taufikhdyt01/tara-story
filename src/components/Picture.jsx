@@ -35,6 +35,7 @@ function Picture() {
         </div>
 
         {/* dots don't fit dozens of photos, so show a counter instead */}
+        <p className="mt-3 -mb-2 text-sm text-center text-white/80">{slide + 1} / {yearPhotos.length} · geser untuk lihat foto lain</p>
         <Carousel key={year} dots={false} afterChange={setSlide}>
           {yearPhotos.map(p => (
             <ImageCard
@@ -46,7 +47,6 @@ function Picture() {
             />
           ))}
         </Carousel>
-        <p className="text-sm text-center text-white/80">{slide + 1} / {yearPhotos.length} · geser untuk lihat foto lain</p>
 
         <div className="flex justify-center w-full mt-12 mb-8">
           <button
