@@ -3,6 +3,19 @@ import { useNavigate } from 'react-router-dom'
 import { ArrowLeft, Video, Phone, CheckCheck } from 'lucide-react'
 import { profile } from '../assets'
 
+// On 10 Oct ask "what day is it today?"; any other day ask the anniversary date instead
+const now = new Date()
+const weekday = now.toLocaleDateString('id-ID', { weekday: 'long' })
+const anniversaryQuestion = now.getMonth() === 9 && now.getDate() === 10
+  ? [
+      { text: 'Eh btw, tau nggak hari ini hari apa?' },
+      { choices: [`Hari ${weekday}?`, 'Hari anniversary kita! 🥳'], correct: 1, wrong: `Iya sih ${weekday} 😤 tapi bukan itu maksud akuu, coba lagi` },
+    ]
+  : [
+      { text: 'Eh btw, inget nggak tanggal berapa kita jadian?' },
+      { choices: ['Hmm… lupa 🙈', '10 Oktober dong! 🥳'], correct: 1, wrong: 'Ih kok lupa 😤 coba inget-inget lagi' },
+    ]
+
 // Naskah chat. { text } = pesan dari Taufik, { choices } = pilihan balasan dia.
 // correct: index jawaban yang benar (kosong = semua benar), wrong: balasan kalau salah, next: halaman tujuan
 const script = [
@@ -11,8 +24,7 @@ const script = [
   { text: 'Lagi apa?' },
   { choices: ['Lagi buka website dari kamu 😳', 'Lagi kangen kamu 🥺'] },
   { text: 'Aku juga kangen bangeet. Batu–Tasik ternyata jauh ya 😭' },
-  { text: 'Eh btw, tau nggak hari ini hari apa?' },
-  { choices: ['Hari Sabtu?', 'Hari anniversary kita! 🥳'], correct: 1, wrong: 'Iya sih Sabtu 😤 tapi bukan itu maksud akuu, coba lagi' },
+  ...anniversaryQuestion,
   { text: 'Pinter banget pacar aku 😘' },
   { text: 'Nggak kerasa ya, udah 2 tahun aja kita' },
   { text: 'Mau tau udah berapa lama persisnya?' },
