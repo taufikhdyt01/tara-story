@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ArrowLeft, Video, Phone, CheckCheck } from 'lucide-react'
+import { profile } from '../assets'
 
 // Naskah chat. { text } = pesan dari Taufik, { choices } = pilihan balasan dia.
 // correct: index jawaban yang benar (kosong = semua benar), wrong: balasan kalau salah, next: halaman tujuan
@@ -66,7 +67,7 @@ function Chat() {
       {/* Header */}
       <div className="flex items-center gap-3 px-3 py-2 text-white bg-[#008069]">
         <ArrowLeft className="w-5 h-5" />
-        <div className="flex items-center justify-center w-10 h-10 font-bold rounded-full bg-rose-400">T</div>
+        <img src={profile} alt="Taufik" className="object-cover w-10 h-10 rounded-full" />
         <div className="flex-1">
           <p className="font-bold leading-tight">Taufik ❤️</p>
           <p className="text-xs text-white/80">{typing ? 'sedang mengetik...' : 'online'}</p>

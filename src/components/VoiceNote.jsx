@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Play, Pause } from 'lucide-react'
 import { ArrowLeft } from './icons'
 import { bgm } from '../story'
+import { profile } from '../assets'
 
 // Rekaman: taruh file di public/voicenote.mp3
 const SRC = '/voicenote.mp3'
@@ -74,7 +75,7 @@ function VoiceNote() {
         {/* WhatsApp-style voice note bubble */}
         <div className="flex items-center gap-3 p-3 text-left bg-white shadow-xl rounded-2xl rounded-tl-none">
           <div className="relative flex-shrink-0">
-            <div className="flex items-center justify-center w-12 h-12 text-lg font-bold text-white rounded-full bg-rose-400">T</div>
+            <img src={profile} alt="Taufik" className="object-cover w-12 h-12 rounded-full" />
             <span className="absolute -bottom-1 -right-1 text-sm">🎙️</span>
           </div>
           <button
