@@ -18,12 +18,15 @@ const anniversaryQuestion = now.getMonth() === 9 && now.getDate() === 10
 
 // Naskah chat. { text } = pesan dari Taufik, { choices } = pilihan balasan dia.
 // correct: index jawaban yang benar (kosong = semua benar), wrong: balasan kalau salah, next: halaman tujuan
+// replies: balasan Taufik sesuai pilihan (urutannya sama dengan choices)
 const script = [
   { text: 'Sayaaang 🥺' },
   { text: 'Akhirnya kebuka juga websitenya hehe' },
   { text: 'Lagi apa?' },
-  { choices: ['Lagi buka website dari kamu 😳', 'Lagi kangen kamu 🥺'] },
-  { text: 'Aku juga kangen bangeet. Batu–Tasik ternyata jauh ya 😭' },
+  {
+    choices: ['Lagi buka website dari kamu 😳', 'Lagi kangen kamu 🥺'],
+    replies: ['Hehe semoga kamu suka ya, aku bikinnya sepenuh hati 🥰', 'Aku juga kangen bangeet. Batu–Tasik ternyata jauh ya 😭'],
+  },
   ...anniversaryQuestion,
   { text: 'Pinter banget pacar aku 😘' },
   { text: 'Nggak kerasa ya, udah 2 tahun aja kita' },
@@ -66,6 +69,13 @@ function Chat() {
       setTimeout(() => {
         setTyping(false)
         send('him', item.wrong)
+      }, 1200)
+    } else if (item.replies) {
+      setTyping(true)
+      setTimeout(() => {
+        setTyping(false)
+        send('him', item.replies[i])
+        setStep(s => s + 1)
       }, 1200)
     } else if (item.next) {
       setTimeout(() => navigate(item.next), 1200)
