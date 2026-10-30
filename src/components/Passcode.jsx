@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { UNLOCK_DATE, bgm } from '../story'
 
 // Passcode
-const CORRECT_PASSCODE = '1010'
+const CORRECT_PASSCODE = '1002'
 
 // Buka ?preview untuk ngetes sebelum hari-H
 const preview = new URLSearchParams(location.search).has('preview')
@@ -54,7 +54,7 @@ function Passcode() {
               
             }, 500)
           } else {
-            setMessage('Kodenya salah nih, coba inget-inget tanggal jadian kita!')
+            setMessage('Kodenya salah nih, coba inget-inget lagi ya!')
             setTimeout(() => {
               setPasscode([])
               setMessage('')
